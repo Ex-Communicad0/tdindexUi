@@ -7676,8 +7676,8 @@
             const e = this.$el,
               n = [this.stackMinZIndex, P(e)],
               i = [
-                ...document.getElementsByClassName("v-menu__content--active"),
-                ...document.getElementsByClassName("v-dialog__content--active")
+                ...document.getElementsByClassName("v-menu__content"),
+                ...document.getElementsByClassName("v-dialog__content")
               ];
             for (let r = 0; r < i.length; r++)
               t.includes(i[r]) || n.push(P(i[r]));
@@ -10546,7 +10546,7 @@
         isContentActive: !1,
         pageWidth: 0,
         pageYOffset: 0,
-        stackClass: "v-menu__content--active",
+        stackClass: "v-menu__content",
         stackMinZIndex: 6
       }),
       computed: {
@@ -10996,12 +10996,12 @@
                 ...this.getScopeIdAttrs(),
                 role: "role" in this.$attrs ? this.$attrs.role : "menu"
               },
-              staticClass: "v-menu__content",
+              staticClass: "test",
               class: {
                 ...this.rootThemeClasses,
-                "v-menu__content--auto": this.activatorFixed,
+                "v-menu__content--auto": this.auto,
                 "v-menu__content--fixed": this.activatorFixed,
-                menuable__content__active: this.activatorFixed,
+                menuable__content__active: this.isActive,
                 [this.contentClass.trim()]: !0
               },
               style: this.styles,
