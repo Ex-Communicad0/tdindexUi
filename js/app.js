@@ -7951,12 +7951,12 @@
             {
               staticClass: "v-dialog__container",
               class: {
-                "v-dialog__container":
+                "v-dialog__container--attached":
                   "" === this.attach ||
                   !0 === this.attach ||
                   "attach" === this.attach
               },
-              attrs: { role: " test" }
+              attrs: { role: "dialog" }
             },
             e
           )
@@ -10999,9 +10999,9 @@
               staticClass: "v-menu__content",
               class: {
                 ...this.rootThemeClasses,
-                "v-menu__content--auto": this.auto,
+                "v-menu__content--auto": this.activatorFixed,
                 "v-menu__content--fixed": this.activatorFixed,
-                menuable__content__active: this.isActive,
+                menuable__content__active: this.activatorFixed,
                 [this.contentClass.trim()]: !0
               },
               style: this.styles,
