@@ -7956,7 +7956,7 @@
                   !0 === this.attach ||
                   "attach" === this.attach
               },
-              attrs: { role: "dialog" }
+              attrs: { role: " test" }
             },
             e
           )
