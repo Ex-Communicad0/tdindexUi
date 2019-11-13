@@ -5139,7 +5139,7 @@
                         attrs: {
                           text: "",
                           tag: "a",
-                          href: "https://github.com/maple3142/GDIndex",
+                          href: "https://github.com/aryanvikash",
                           target: "_blank"
                         }
                       },
@@ -7951,7 +7951,7 @@
             {
               staticClass: "v-dialog__container",
               class: {
-                "v-dialog__container--attached":
+                "v-dialog__container":
                   "" === this.attach ||
                   !0 === this.attach ||
                   "attach" === this.attach
